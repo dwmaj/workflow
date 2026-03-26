@@ -21,5 +21,5 @@
 
 ## Warning
 
-Not intended to be used in production since minification as been disabled.  
+Not intended to be used in production.  
 For school project purpose only.
