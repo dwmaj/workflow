@@ -1,25 +1,29 @@
-# Simple Workflow with Laravel Mix.
+# Simple Workflow with Vite
+
+A minimal front-end build setup for teaching vanilla JavaScript.
 
 ## Install
 
+- `nvm use` (Node 24)
 - `npm i`
 
 ## Features
 
-- Copy `src/*.html` to `dist` folder.
-- Copy `src/assets/*/` to `dist/assets/*/` folder.
-- Compile SASS `src/styles/app.scss` to `dist/styles` folder.
-- Bundle and transpile JS `src/scripts/app.js` to `dist/scripts` folder.
-- Create sources maps.
-- Run a dev web server with browsersync.
+- Serves `src/*.html` with a dev server and hot reload.
+- Any `.html` file under `src/` is a page automatically (e.g. `src/about.html`,
+  `src/blog/post.html`) — no list to maintain.
+- Compiles SASS referenced from HTML (`<link rel="stylesheet" href="/styles/app.scss">`).
+- Bundles ES modules referenced from HTML (`<script type="module" src="/scripts/app.js">`).
+- Copies everything in `src/public/` to `dist/` untouched (images, fonts, ...).
+- Source maps in dev and in the production build.
 
 ## Commands
 
-- `npx mix watch` : build on files changes, launch a dev server with browsersync.
-- `npm run build` : clean, lint and build the project.
-- `npm run clean` : clean the `dist` folder.
+- `npm run dev` : start the dev server with hot reload.
+- `npm run build` : build the site into `dist/`.
+- `npm run preview` : serve the built `dist/` folder to check the production build.
 
 ## Warning
 
-Not intended to be used in production.  
+Not intended to be used in production.
 For school project purpose only.

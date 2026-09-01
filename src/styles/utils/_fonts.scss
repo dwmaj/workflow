@@ -1,0 +1,18 @@
+// Self-hosted Inter — SIL Open Font License, files in public/fonts/.
+// Vite rewrites the /fonts/ URLs to a relative path at build time.
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
